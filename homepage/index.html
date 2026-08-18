@@ -3,111 +3,235 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abhi Mokkapati | About Me</title>
+  <title>Abhi Mokkapati | Fullstack &amp; Data Engineer</title>
+  <meta name="description" content="Abhi Mokkapati — aspiring fullstack &amp; data engineer. Portfolio, skills, and a bit of personality." />
+  <link rel="stylesheet" href="../assets/css/base.css" />
   <link rel="stylesheet" href="index.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..800;1,9..144,500..700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
 <header class="navbar">
-  <button class="hamburger" id="hamburger">☰</button>
-
   <div class="logo">
-    <a href = "../homepage/index.html">
-      <img src="/homepage/images/AM Logo.jpg" alt="Abhi Mokkapati Personal Logo">
+    <a href="index.html">
+      <img src="images/AM Logo.jpg" alt="Abhi Mokkapati Personal Logo">
+      Abhi Mokkapati
     </a>
   </div>
 
-  <!-- Navigation links -->
-  <nav class="nav-links" id="navLinks">
-    <a href="index.html">Home</a>
-    <a href="../projects/projects.html">Personal Projects</a>
-    <a href="../contact/contact.html">Contact Me</a>
-  </nav>
+  <button class="hamburger" id="hamburger">☰</button>
 
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html" class="active">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="../projects/projects.html">Projects</a>
+    <a href="../contact/contact.html" class="nav-cta">Say Hi</a>
+  </nav>
 </header>
 
   <main>
+    <!-- ============ HERO ============ -->
     <section class="hero">
-      <h1>Welcome to my Website</h1>
-      <ul class="hero-info">
-        <li>I am 20 Years Old</li>
-        <li>From Concord, CA</li>
-        <li>Aspiring Fullstack/Data Engineer</li>
-      </ul>
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">// welcome to my corner of the internet</p>
+        <h1>Hey, I'm Abhi<span class="wave">👋</span><br>I build <span class="squiggle">things</span> that work<br>&amp; occasionally look good doing it.</h1>
+        <p class="hero-sub">20-year-old aspiring fullstack &amp; data engineer based in Concord, CA. I turn coffee, curiosity, and way too many browser tabs into software.</p>
+        <div class="hero-actions">
+          <a href="../projects/projects.html" class="btn btn-coral">See my projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="../contact/contact.html" class="btn btn-outline">Let's talk</a>
+        </div>
+        <ul class="hero-facts">
+          <li><i class="fa-solid fa-location-dot"></i> Concord, CA</li>
+          <li><i class="fa-solid fa-code"></i> Fullstack + Data</li>
+          <li><i class="fa-solid fa-mug-hot"></i> Perpetually caffeinated</li>
+        </ul>
+      </div>
+
+      <div class="hero-portrait">
+        <div class="portrait-frame">
+          <img src="images/photo.jpg" alt="Abhi Mokkapati">
+        </div>
+        <span class="sticker sticker-1">open to work 🚀</span>
+        <span class="sticker sticker-2">est. 2005</span>
+      </div>
     </section>
-    
-    <section class="content">
-      <a href="https://www.instagram.com/abhisflics?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" class="card">
-        <img src="./images/photo.jpg" alt="Picture of Abhi Taking Photos">
-        <p>My Hobbies</p>
-        <p>In my free time I enjoy photography, swimming, hiking, cooking, and DJing. Click above to check out my photo account!</p>
-      </a>
-      <a href="https://music.youtube.com/playlist?list=PLxDyHWCbbAKQEvSBJ_SoKx1-cVVF4ZaMH&si=SD_Dmadu_10Iu_x-" class="card">
-        <img src="./images/2.jpg" alt="Picture of Abhi With Headphones">
-        <p>My Music</p>
-        <p>I love a variety of artists like Post Malone, the Weeknd, and Don Toliver! Click above to see my personal playlist!</p>
-      </a>
-      <a href="https://beliapp.co/app/abhimokkapati" class="card">
-        <img src="./images/food.jpg" alt="Picture of Food">
-        <p>My Food</p>
-        <p>I'm a huge foodie! I've tried a lot of differnt places and rated them online! Click above to add me on Beli!</p>
-      </a>
-      <a href="" class="card">
-        <img src="./images/family.jpg" alt="Abhi's Family">
-        <p>My Life</p>
-        <p>I have one younger brother! I live with him and my awesome parents!</p>
-      </a>
+
+    <!-- ============ MARQUEE ============ -->
+    <section class="marquee-wrap" aria-hidden="true">
+      <div class="marquee-track">
+        <span>DATA ENGINEER</span><span>★</span><span>FULLSTACK DEV</span><span>★</span><span>PHOTOGRAPHER</span><span>★</span><span>HOME COOK</span><span>★</span><span>DJ</span><span>★</span>
+        <span>DATA ENGINEER</span><span>★</span><span>FULLSTACK DEV</span><span>★</span><span>PHOTOGRAPHER</span><span>★</span><span>HOME COOK</span><span>★</span><span>DJ</span><span>★</span>
+      </div>
     </section>
-  </div>
-</section>
 
-
-    <!-- Slideshow Images -->
-    <section class="slideshow">
-      <div class="mySlides fade">
-        <img src="/homepage/images/1.jpg" style="width:100%">
-      </div>
-    
-      <div class="mySlides fade">
-        <img src="/homepage/images/2.jpg" style="width:100%">
-      </div>
-    
-      <div class="mySlides fade">
-        <img src="/homepage/images/3.jpg" style="width:100%">
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="about-media reveal">
+        <img src="images/2.jpg" alt="Abhi with headphones" class="about-img img-1">
+        <img src="images/food.jpg" alt="A dish Abhi cooked" class="about-img img-2">
+        <div class="about-badge">
+          <strong>3+</strong>
+          <span>years writing code that (mostly) doesn't break</span>
+        </div>
       </div>
 
-      <div class="mySlides fade">
-        <img src="/homepage/images/4.jpg" style="width:100%">
+      <div class="about-copy reveal">
+        <p class="eyebrow">01 — about me</p>
+        <h2>Equal parts spreadsheets and spontaneity.</h2>
+        <p>
+          <em>[Placeholder — swap in your real story here.]</em> I got into engineering the way most people
+          get into anything worthwhile: by breaking something and getting curious about why. These days
+          that curiosity looks like building fullstack apps, wrangling messy datasets into something useful,
+          and occasionally training a model that stares back at me through a webcam.
+        </p>
+        <p>
+          Outside of a code editor, you'll find me behind a camera, testing a new recipe, DJing a playlist
+          nobody asked for, or arguing about the best hiking trail near the Bay. I like software that's built
+          with the same care as a good meal — thoughtful, a little bit stylish, and made for people to enjoy.
+        </p>
+        <div class="about-stat-row">
+          <div class="stat"><strong>20</strong><span>years old</span></div>
+          <div class="stat"><strong>CA</strong><span>Concord, born &amp; raised</span></div>
+          <div class="stat"><strong>∞</strong><span>side projects in progress</span></div>
+        </div>
       </div>
-    
-      <div class="mySlides fade">
-        <img src="/homepage/images/5.jpg" style="width:100%">
-      </div>
+    </section>
 
-      <div class="mySlides fade">
-        <img src="/homepage/images/6.jpg" style="width:100%">
-      </div>
-    
-      <div class="mySlides fade">
-        <img src="/homepage/images/7.jpg" style="width:100%">
-      </div>
+    <!-- ============ SKILLS ============ -->
+    <section class="skills" id="skills">
+      <p class="eyebrow center">02 — skills</p>
+      <h2 class="center">My toolbox, at a glance.</h2>
+      <p class="section-sub center">A living list — updated whenever I fall down a new rabbit hole.</p>
 
-      <!-- Navigation buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <span class="skill-icon" style="background:var(--coral)"><i class="fa-solid fa-laptop-code"></i></span>
+            <h3>Languages</h3>
+          </div>
+          <div class="tag-cloud">
+            <span class="tag" style="--r:-3deg">Python</span>
+            <span class="tag" style="--r:2deg">JavaScript</span>
+            <span class="tag" style="--r:-1deg">TypeScript</span>
+            <span class="tag" style="--r:3deg">Java</span>
+            <span class="tag" style="--r:-2deg">SQL</span>
+            <span class="tag" style="--r:1deg">HTML / CSS</span>
+          </div>
+        </div>
 
-      <!-- Dots -->
-      <div style="text-align:center; margin-top:10px;">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <span class="skill-icon" style="background:var(--blue)"><i class="fa-solid fa-layer-group"></i></span>
+            <h3>Frameworks &amp; Tools</h3>
+          </div>
+          <div class="tag-cloud">
+            <span class="tag" style="--r:2deg">React</span>
+            <span class="tag" style="--r:-2deg">Node.js</span>
+            <span class="tag" style="--r:1deg">Flask</span>
+            <span class="tag" style="--r:-3deg">Git &amp; GitHub</span>
+            <span class="tag" style="--r:3deg">Docker</span>
+            <span class="tag" style="--r:-1deg">Figma</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <span class="skill-icon" style="background:var(--marigold)"><i class="fa-solid fa-database"></i></span>
+            <h3>Data &amp; ML</h3>
+          </div>
+          <div class="tag-cloud">
+            <span class="tag" style="--r:-2deg">Pandas</span>
+            <span class="tag" style="--r:1deg">NumPy</span>
+            <span class="tag" style="--r:-3deg">OpenCV</span>
+            <span class="tag" style="--r:2deg">scikit-learn</span>
+            <span class="tag" style="--r:-1deg">PostgreSQL</span>
+            <span class="tag" style="--r:3deg">Excel Wizardry</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-head">
+            <span class="skill-icon" style="background:var(--mint)"><i class="fa-solid fa-cloud"></i></span>
+            <h3>Cloud &amp; Platforms</h3>
+          </div>
+          <div class="tag-cloud">
+            <span class="tag" style="--r:1deg">AWS</span>
+            <span class="tag" style="--r:-2deg">Firebase</span>
+            <span class="tag" style="--r:3deg">Vercel</span>
+            <span class="tag" style="--r:-1deg">Linux</span>
+            <span class="tag" style="--r:2deg">REST APIs</span>
+            <span class="tag" style="--r:-3deg">CI/CD</span>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <!-- ============ BEYOND THE CODE ============ -->
+    <section class="content" id="beyond">
+      <p class="eyebrow center">03 — beyond the code</p>
+      <h2 class="center">Life outside the IDE.</h2>
+
+      <div class="card-grid">
+        <a href="https://www.instagram.com/abhisflics?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" class="card" target="_blank" rel="noopener">
+          <img src="images/photo.jpg" alt="Picture of Abhi Taking Photos">
+          <div class="card-body">
+            <p class="card-title">My Hobbies</p>
+            <p>Photography, swimming, hiking, cooking, and DJing. Click to check out my photo account.</p>
+          </div>
+        </a>
+        <a href="https://music.youtube.com/playlist?list=PLxDyHWCbbAKQEvSBJ_SoKx1-cVVF4ZaMH&si=SD_Dmadu_10Iu_x-" class="card" target="_blank" rel="noopener">
+          <img src="images/2.jpg" alt="Picture of Abhi With Headphones">
+          <div class="card-body">
+            <p class="card-title">My Music</p>
+            <p>Post Malone, the Weeknd, Don Toliver on repeat. Click to see my personal playlist.</p>
+          </div>
+        </a>
+        <a href="https://beliapp.co/app/abhimokkapati" class="card" target="_blank" rel="noopener">
+          <img src="images/food.jpg" alt="Picture of Food">
+          <div class="card-body">
+            <p class="card-title">My Food</p>
+            <p>Certified foodie — I rate every spot I try. Click to add me on Beli.</p>
+          </div>
+        </a>
+        <a href="#about" class="card">
+          <img src="images/family.jpg" alt="Abhi's Family">
+          <div class="card-body">
+            <p class="card-title">My Life</p>
+            <p>One younger brother, two awesome parents, and a lot of noise at the dinner table.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ PHOTO STRIP ============ -->
+    <section class="photo-strip reveal" aria-label="Photo carousel">
+      <div class="strip-track">
+        <img src="images/1.jpg" alt="">
+        <img src="images/2.jpg" alt="">
+        <img src="images/3.jpg" alt="">
+        <img src="images/4.jpg" alt="">
+        <img src="images/5.jpg" alt="">
+        <img src="images/6.jpg" alt="">
+        <img src="images/7.jpg" alt="">
+        <img src="images/1.jpg" alt="" aria-hidden="true">
+        <img src="images/2.jpg" alt="" aria-hidden="true">
+        <img src="images/3.jpg" alt="" aria-hidden="true">
+        <img src="images/4.jpg" alt="" aria-hidden="true">
+        <img src="images/5.jpg" alt="" aria-hidden="true">
+        <img src="images/6.jpg" alt="" aria-hidden="true">
+        <img src="images/7.jpg" alt="" aria-hidden="true">
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta">
+      <h2>Got a project, a role, or just want to talk shop?</h2>
+      <a href="../contact/contact.html" class="btn btn-coral">Get in touch <i class="fa-solid fa-paper-plane"></i></a>
     </section>
   </main>
 
@@ -124,7 +248,6 @@
     </div>
   </footer>
 
-
-<script src="index.js"></script>
+<script src="../assets/js/base.js"></script>
 </body>
 </html>

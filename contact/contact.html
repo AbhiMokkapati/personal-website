@@ -3,55 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhi Mokkapati | Contact Me</title>
+  <title>Abhi Mokkapati | Contact</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="contact.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..800;1,9..144,500..700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
 
 <header class="navbar">
-  <button class="hamburger" id="hamburger">☰</button>
-
   <div class="logo">
-    <a href = "../homepage/index.html">
-      <img src="/homepage/images/AM Logo.jpg" alt="Abhi Mokkapati Personal Logo">
+    <a href="../homepage/index.html">
+      <img src="../homepage/images/AM Logo.jpg" alt="Abhi Mokkapati Personal Logo">
+      Abhi Mokkapati
     </a>
   </div>
 
-  <!-- Navigation links -->
+  <button class="hamburger" id="hamburger">☰</button>
+
   <nav class="nav-links" id="navLinks">
     <a href="../homepage/index.html">Home</a>
-    <a href="../projects/projects.html">Personal Projects</a>
-    <a href="contact.html">Contact Me</a>
+    <a href="../homepage/index.html#about">About</a>
+    <a href="../homepage/index.html#skills">Skills</a>
+    <a href="../projects/projects.html">Projects</a>
+    <a href="contact.html" class="nav-cta active">Say Hi</a>
   </nav>
-
 </header>
 
   <main class="contact-page">
-    <h1>Contact Us</h1>
-    <p>Have questions or want to connect? Send me a message below!</p>
+    <div class="contact-wrap">
+      <div class="contact-intro">
+        <p class="eyebrow">// let's connect</p>
+        <h1>Got something<br>in mind?</h1>
+        <p class="contact-sub">
+          Whether it's a job opportunity, a project idea, or you just want to talk about the best
+          Bay Area hiking trail — drop me a note. I read every message myself.
+        </p>
+        <ul class="contact-details">
+          <li><i class="fa-solid fa-envelope"></i> abhimokkapati@gmail.com</li>
+          <li><i class="fa-solid fa-location-dot"></i> Concord, CA</li>
+        </ul>
+        <div class="footer-socials contact-socials">
+          <a href="https://www.instagram.com/abhi.mokkapati?utm_source=qr" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/abhi.mokkapati26/" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+      </div>
 
-    <form action="https://formspree.io/f/xqayvaev" method="POST" class="contact-form" id="contactForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+      <div class="contact-panel">
+        <form action="https://formspree.io/f/xqayvaev" method="POST" class="contact-form" id="contactForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="_replyto" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" placeholder="you@email.com" required>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="What's on your mind?" required></textarea>
 
-      <button type="submit">Send Message</button>
-    </form>
+          <button type="submit" class="btn btn-coral">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
 
-    <!-- Confirmation Message -->
-    <div id="confirmation" class="confirmation" style="display:none;">
-      <p>Your message has been recieved!</p>
-      <button id="sendAnother">Send Another Message</button>
+        <div id="confirmation" class="confirmation" style="display:none;">
+          <span class="confirmation-icon">✦</span>
+          <p>Your message has been received — I'll get back to you soon!</p>
+          <button id="sendAnother" class="btn btn-outline">Send Another Message</button>
+        </div>
+      </div>
     </div>
-
   </main>
 
   <footer>
@@ -67,14 +90,14 @@
     </div>
   </footer>
 
-
+  <script src="../assets/js/base.js"></script>
   <script>
     const form = document.getElementById('contactForm');
     const confirmation = document.getElementById('confirmation');
     const sendAnotherBtn = document.getElementById('sendAnother');
 
     form.addEventListener('submit', async (e) => {
-      e.preventDefault(); // stop default submission
+      e.preventDefault();
 
       const formData = new FormData(form);
 
@@ -86,9 +109,8 @@
         });
 
         if (response.ok) {
-          // Hide form and show confirmation
           form.style.display = 'none';
-          confirmation.style.display = 'block';
+          confirmation.style.display = 'flex';
         } else {
           console.error('Form submission failed.');
         }
@@ -97,7 +119,6 @@
       }
     });
 
-    // Send Another Message
     sendAnotherBtn.addEventListener('click', () => {
       form.reset();
       form.style.display = 'flex';
@@ -105,12 +126,5 @@
     });
   </script>
 
-  <script>
-    document.getElementById("hamburger").addEventListener("click", function () {
-        const nav = document.getElementById("navLinks");
-        nav.classList.toggle("show");
-    });
-  </script>
-  
 </body>
 </html>
