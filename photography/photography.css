@@ -1,0 +1,56 @@
+/* ============ PHOTOGRAPHY PAGE ============ */
+.photo-hero { padding-bottom: 1rem; }
+.photo-actions { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-top: 1.5rem; justify-content: center; }
+.photo-strip-wrap { padding-top: 2.5rem; }
+.booking {
+  padding: clamp(3rem, 8vw, 5rem) clamp(1.25rem, 5vw, 3.5rem);
+}
+.booking .contact-wrap { align-items: start; }
+.contact-form select {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 0.85em 1em;
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  background: var(--cream);
+  color: var(--ink);
+}
+.contact-form select:focus {
+  outline: none;
+  box-shadow: 4px 4px 0 var(--marigold);
+}
+.contact-form input[type="date"] { min-height: 3em; }
+
+.photo-strip {
+  padding: 0 0 clamp(4rem, 9vw, 6rem);
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent 0, #000 6%, #000 94%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 6%, #000 94%, transparent 100%);
+}
+.strip-track {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: max-content;
+  animation: strip-scroll 38s linear infinite;
+}
+.photo-strip:hover .strip-track { animation-play-state: paused; }
+.strip-track img {
+  width: 220px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2.5px solid var(--ink);
+  flex-shrink: 0;
+}
+.strip-track img:nth-child(even) { transform: rotate(-2deg); }
+.strip-track img:nth-child(odd) { transform: rotate(2deg); }
+
+@keyframes strip-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .strip-track { animation: none; }
+}
+

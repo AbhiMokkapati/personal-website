@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhi Mokkapati | Photography</title>
+  <meta name="description" content="Photography portfolio and booking inquiries." />
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../contact/contact.css" />
+  <link rel="stylesheet" href="../projects/projects.css" />
+  <link rel="stylesheet" href="photography.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..800;1,9..144,500..700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+<header class="navbar">
+  <div class="logo">
+    <a href="../index.html">
+      <img src="../images/AM Logo.jpg" alt="Abhi Mokkapati Personal Logo">
+      Abhi Mokkapati
+    </a>
+  </div>
+
+  <button class="hamburger" id="hamburger">☰</button>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="../index.html">Home</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#skills">Skills</a>
+    <a href="../projects/projects.html">Projects</a>
+    <a href="photography.html" class="active">Photography</a>
+    <a href="../contact/contact.html" class="nav-cta">Say Hi</a>
+  </nav>
+</header>
+
+  <main>
+    <section class="hero-simple photo-hero">
+      <p class="eyebrow">// photography</p>
+      <h1>Photography</h1>
+      <p>Landscapes, portraits, and events. Browse the portfolio, then send a booking request below.</p>
+      <div class="photo-actions">
+        <a href="https://drive.google.com/drive/folders/188UQT8j-6wJGAhq79nBp_8A04MBZM4AI?usp=drive_link" class="btn btn-coral" target="_blank" rel="noopener">View full gallery <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a href="https://www.instagram.com/abhisflics?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" class="btn btn-outline" target="_blank" rel="noopener">Photo Instagram <i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+
+    <section class="photo-strip photo-strip-wrap reveal" aria-label="Photo carousel">
+      <div class="strip-track">
+        <img src="../images/1.jpg" alt="">
+        <img src="../images/2.jpg" alt="">
+        <img src="../images/3.jpg" alt="">
+        <img src="../images/4.jpg" alt="">
+        <img src="../images/5.jpg" alt="">
+        <img src="../images/6.jpg" alt="">
+        <img src="../images/7.jpg" alt="">
+        <img src="../images/1.jpg" alt="" aria-hidden="true">
+        <img src="../images/2.jpg" alt="" aria-hidden="true">
+        <img src="../images/3.jpg" alt="" aria-hidden="true">
+        <img src="../images/4.jpg" alt="" aria-hidden="true">
+        <img src="../images/5.jpg" alt="" aria-hidden="true">
+        <img src="../images/6.jpg" alt="" aria-hidden="true">
+        <img src="../images/7.jpg" alt="" aria-hidden="true">
+      </div>
+    </section>
+
+    <section class="booking" id="book">
+      <div class="contact-wrap">
+        <div class="contact-intro">
+          <p class="eyebrow">// book a shoot</p>
+          <h1>Book a session</h1>
+          <p class="contact-sub">
+            Tell me what you have in mind: the type of shoot, a rough date, and where. I'll reply
+            by email to confirm availability and details.
+          </p>
+          <ul class="contact-details">
+            <li><i class="fa-solid fa-envelope"></i> abhimokkapati@gmail.com</li>
+            <li><i class="fa-solid fa-location-dot"></i> SF Bay Area</li>
+          </ul>
+        </div>
+
+        <div class="contact-panel">
+          <form action="https://formspree.io/f/xqayvaev" method="POST" class="contact-form" id="bookingForm">
+            <input type="hidden" name="_subject" value="Photography booking request">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" placeholder="you@email.com" required>
+
+            <label for="type">Type of shoot</label>
+            <select id="type" name="shoot_type" required>
+              <option value="" disabled selected>Select one</option>
+              <option>Portraits</option>
+              <option>Graduation</option>
+              <option>Event</option>
+              <option>Couples / Family</option>
+              <option>Other</option>
+            </select>
+
+            <label for="date">Preferred date</label>
+            <input type="date" id="date" name="preferred_date">
+
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="City or venue">
+
+            <label for="message">Details</label>
+            <textarea id="message" name="message" rows="5" placeholder="Anything else I should know?" required></textarea>
+
+            <button type="submit" class="btn btn-coral">Request Booking <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+
+          <div id="confirmation" class="confirmation" style="display:none;">
+            <span class="confirmation-icon">✦</span>
+            <p>Your booking request has been received. I'll get back to you soon!</p>
+            <button id="sendAnother" class="btn btn-outline">Send Another Request</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Abhi Mokkapati. All rights reserved.</p>
+
+    <div class="footer-socials">
+      <a href="https://github.com/AbhiMokkapati" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </footer>
+
+<script src="../assets/js/base.js"></script>
+<script>
+  const form = document.getElementById('bookingForm');
+  const confirmation = document.getElementById('confirmation');
+  const sendAnotherBtn = document.getElementById('sendAnother');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (response.ok) {
+        form.style.display = 'none';
+        confirmation.style.display = 'flex';
+      } else {
+        console.error('Form submission failed.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
+  });
+
+  sendAnotherBtn.addEventListener('click', () => {
+    form.reset();
+    form.style.display = 'flex';
+    confirmation.style.display = 'none';
+  });
+</script>
+</body>
+</html>
