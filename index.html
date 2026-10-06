@@ -13,8 +13,8 @@
   <meta property="og:url" content="https://abhimokkapati.github.io/personal-website/" />
   <meta property="og:image" content="https://abhimokkapati.github.io/personal-website/images/photo.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="assets/css/base.css?v=4" />
-  <link rel="stylesheet" href="index.css?v=4" />
+  <link rel="stylesheet" href="assets/css/base.css?v=5" />
+  <link rel="stylesheet" href="index.css?v=5" />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..800;1,9..144,500..700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
@@ -79,10 +79,73 @@
       </div>
     </section>
 
+    <!-- ============ FEATURED PROJECTS ============ -->
+    <section class="featured" id="projects">
+      <p class="eyebrow center">01 // featured projects</p>
+      <h2 class="center">Things I've built and shipped.</h2>
+      <p class="section-sub center">Three projects I'm proudest of, two with live demos you can open right now.</p>
+
+      <div class="featured-grid">
+        <article class="feature-card reveal">
+          <div class="feature-media"><img src="projects/images/hall-staff.jpg" alt="Hall Staff Duty sign in page" loading="lazy"></div>
+          <p class="feature-kicker">FULLSTACK / SCHEDULING</p>
+          <h3>Hall Staff Scheduler</h3>
+          <p>A multi-tenant duty scheduling app used by every RA on staff in Unit 1. Postgres row-level security enforces four role tiers, and a custom greedy plus local-search algorithm builds fair schedules around availability and consecutive-day limits.</p>
+          <div class="tag-cloud">
+            <span class="tag" style="--r:-2deg">Next.js</span>
+            <span class="tag" style="--r:1deg">TypeScript</span>
+            <span class="tag" style="--r:-1deg">Supabase</span>
+            <span class="tag" style="--r:2deg">RLS</span>
+          </div>
+          <div class="feature-links">
+            <a href="https://ra-scheduling.vercel.app" target="_blank" rel="noopener">Live demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <span class="feature-note">Private repo</span>
+          </div>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-media"><img src="projects/images/dropbox.jpg" alt="DropboxClone Vault sign in screen" loading="lazy"></div>
+          <p class="feature-kicker">SYSTEMS / SECURITY</p>
+          <h3>Encrypted File Sharing</h3>
+          <p>A Dropbox-style service in Go with end-to-end encryption, RSA-signed single-use share invitations, and key rotation on revocation. Appends cost a constant ~1,800 bytes of bandwidth no matter how large the file is.</p>
+          <div class="tag-cloud">
+            <span class="tag" style="--r:1deg">Go</span>
+            <span class="tag" style="--r:-2deg">Cryptography</span>
+            <span class="tag" style="--r:2deg">bbolt</span>
+          </div>
+          <div class="feature-links">
+            <a href="https://dropboxclone-qi61.onrender.com" target="_blank" rel="noopener">Live demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <span class="feature-note">Private repo</span>
+          </div>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-media"><img src="projects/images/f1-predictor.jpg" alt="F1 Race Predictor predictions dashboard" loading="lazy"></div>
+          <p class="feature-kicker">DATA / ML</p>
+          <h3>F1 Race Predictor</h3>
+          <p>A learning-to-rank model (LightGBM, LambdaRank) that predicts full race orderings from FastF1 data, evaluated with time-based splits to avoid leakage. Served by a FastAPI backend and a React dashboard.</p>
+          <div class="tag-cloud">
+            <span class="tag" style="--r:-1deg">Python</span>
+            <span class="tag" style="--r:2deg">LightGBM</span>
+            <span class="tag" style="--r:-2deg">FastAPI</span>
+            <span class="tag" style="--r:1deg">React</span>
+          </div>
+          <div class="feature-links">
+            <a href="projects/projects.html">All project details &rarr;</a>
+            <span class="feature-note">Private repo</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="featured-more">
+        <a href="projects/projects.html" class="btn btn-coral">See all projects <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
     <!-- ============ ABOUT ============ -->
     <section class="about" id="about">
       <div class="about-copy reveal">
-        <p class="eyebrow">01 // about me</p>
+        <p class="eyebrow">02 // about me</p>
         <h2>Fullstack apps, data pipelines, and ML.</h2>
         <p>
           I'm a senior at UC Berkeley studying Electrical Engineering and Computer Science with a
@@ -113,7 +176,7 @@
 
     <!-- ============ EXPERIENCE ============ -->
     <section class="experience" id="experience">
-      <p class="eyebrow">02 // education &amp; experience</p>
+      <p class="eyebrow">03 // education &amp; experience</p>
       <h2>Where I've studied and worked.</h2>
 
       <div class="exp-list">
@@ -188,7 +251,7 @@
 
     <!-- ============ SKILLS ============ -->
     <section class="skills" id="skills">
-      <p class="eyebrow center">03 // skills</p>
+      <p class="eyebrow center">04 // skills</p>
       <h2 class="center">My toolbox, at a glance.</h2>
       <p class="section-sub center">A living list, updated whenever I fall down a new rabbit hole.</p>
 
