@@ -130,7 +130,6 @@
 .marquee-track {
   display: flex;
   width: max-content;
-  gap: 1.4rem;
   animation: marquee 26s linear infinite;
   font-family: var(--font-mono);
   font-weight: 500;
@@ -138,6 +137,14 @@
   letter-spacing: 0.06em;
   color: var(--cream);
   white-space: nowrap;
+}
+.marquee-group {
+  display: flex;
+  flex-shrink: 0;
+  gap: 1.4rem;
+  padding-right: 1.4rem;
+  min-width: 100vw;
+  justify-content: space-around;
 }
 .marquee-track span:nth-child(2n) { color: var(--marigold); }
 @keyframes marquee {
