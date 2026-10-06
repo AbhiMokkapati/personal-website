@@ -4,7 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abhi Mokkapati</title>
-  <meta name="description" content="Abhi Mokkapati: aspiring fullstack &amp; data engineer. Projects, skills, and contact." />
+  <meta name="description" content="Abhi Mokkapati: UC Berkeley EECS student and aspiring fullstack &amp; data engineer. Projects, experience, resume, and contact." />
+  <link rel="icon" href="images/AM%20Logo.jpg" />
+  <link rel="canonical" href="https://abhimokkapati.github.io/personal-website/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Abhi Mokkapati | Fullstack &amp; Data Engineer" />
+  <meta property="og:description" content="UC Berkeley EECS student building fullstack apps, data pipelines, and ML tools. Projects, experience, and resume." />
+  <meta property="og:url" content="https://abhimokkapati.github.io/personal-website/" />
+  <meta property="og:image" content="https://abhimokkapati.github.io/personal-website/images/photo.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="index.css" />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..800;1,9..144,500..700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -25,6 +33,7 @@
   <nav class="nav-links" id="navLinks">
     <a href="index.html" class="active">Home</a>
     <a href="index.html#about">About</a>
+    <a href="index.html#experience">Experience</a>
     <a href="index.html#skills">Skills</a>
     <a href="projects/projects.html">Projects</a>
     <a href="photography/photography.html">Photography</a>
@@ -41,12 +50,14 @@
       <div class="hero-copy">
         <p class="eyebrow">// fullstack &amp; data engineer</p>
         <h1>Hey, I'm Abhi<span class="wave">👋</span><br>I build <span class="squiggle">software</span><br>and data systems.</h1>
-        <p class="hero-sub">21 year old aspiring fullstack &amp; data engineer based in the SF Bay Area. I build fullstack apps, data pipelines, and ML tools.</p>
+        <p class="hero-sub">EECS student at UC Berkeley (class of 2027) and aspiring fullstack &amp; data engineer based in the SF Bay Area. I build fullstack apps, data pipelines, and ML tools.</p>
         <div class="hero-actions">
           <a href="projects/projects.html" class="btn btn-coral">See my projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="assets/Abhiram_Mokkapati_Resume.pdf" class="btn btn-outline" target="_blank" rel="noopener">Resume <i class="fa-solid fa-file-arrow-down"></i></a>
           <a href="contact/contact.html" class="btn btn-outline">Let's talk</a>
         </div>
         <ul class="hero-facts">
+          <li><i class="fa-solid fa-graduation-cap"></i> UC Berkeley EECS '27</li>
           <li><i class="fa-solid fa-location-dot"></i> SF Bay Area</li>
           <li><i class="fa-solid fa-code"></i> Fullstack + Data</li>
         </ul>
@@ -86,14 +97,69 @@
         </p>
         <div class="about-stat-row">
           <div class="stat"><strong>3+</strong><span>years writing code</span></div>
+          <div class="stat"><strong>'27</strong><span>UC Berkeley EECS</span></div>
           <div class="stat"><strong>CA</strong><span>SF Bay Area</span></div>
         </div>
       </div>
     </section>
 
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="experience" id="experience">
+      <p class="eyebrow">02 // experience &amp; education</p>
+      <h2>Where I've worked and studied.</h2>
+
+      <div class="exp-list">
+        <article class="exp-card reveal">
+          <div class="exp-head">
+            <div>
+              <h3>Data Engineer &rarr; Engineering Lead</h3>
+              <p class="exp-org">Motion Performance CoPilot, McQueen.AIP &middot; San Francisco, CA</p>
+            </div>
+            <span class="exp-date">Sept 2025 &ndash; Jul 2026</span>
+          </div>
+          <ul>
+            <li>Built a real time stroke classification system with MediaPipe and OpenCV, using temporal pattern analysis across freestyle, backstroke, breaststroke, and butterfly.</li>
+            <li>Engineered automated wall detection and lap tracking from direction change algorithms and adaptive learning, enabling stroke counting, split times, and JSON session export.</li>
+            <li>Designed a context aware feedback engine that compares actual stroke counts and pace against intensity based targets to generate personalized coaching insights.</li>
+            <li>Stepped up to Engineering Lead for a summer sprint, architecting a GPU accelerated multi camera tracking pipeline (YOLOv8 + OSNet Re-ID) and a Next.js / Supabase coach web platform.</li>
+          </ul>
+        </article>
+
+        <article class="exp-card reveal">
+          <div class="exp-head">
+            <div>
+              <h3>B.S. Electrical Engineering &amp; Computer Science</h3>
+              <p class="exp-org">University of California, Berkeley &middot; Minor in Data Science</p>
+            </div>
+            <span class="exp-date">Expected May 2027</span>
+          </div>
+          <p class="exp-note"><strong>Coursework:</strong> Data Structures &amp; Algorithms, Efficient Algorithms &amp; Intractable Problems, Computer Architecture, Computer Security, Discrete Math &amp; Probability Theory, Principles &amp; Techniques of Data Science.</p>
+        </article>
+
+        <article class="exp-card reveal">
+          <div class="exp-head">
+            <div>
+              <h3>Leadership &amp; involvement</h3>
+              <p class="exp-org">Outside of engineering</p>
+            </div>
+          </div>
+          <div class="tag-cloud">
+            <span class="tag" style="--r:-2deg">Senior Resident Assistant &middot; Berkeley Residential Life</span>
+            <span class="tag" style="--r:1deg">Webmaster &middot; Indian Students Association</span>
+            <span class="tag" style="--r:-1deg">Pool Manager &middot; City of Concord</span>
+            <span class="tag" style="--r:2deg">Photographer &middot; Innovative Design</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="exp-actions">
+        <a href="assets/Abhiram_Mokkapati_Resume.pdf" class="btn btn-coral" target="_blank" rel="noopener">Download resume (PDF) <i class="fa-solid fa-file-arrow-down"></i></a>
+      </div>
+    </section>
+
     <!-- ============ SKILLS ============ -->
     <section class="skills" id="skills">
-      <p class="eyebrow center">02 // skills</p>
+      <p class="eyebrow center">03 // skills</p>
       <h2 class="center">My toolbox, at a glance.</h2>
       <p class="section-sub center">A living list, updated whenever I fall down a new rabbit hole.</p>
 
@@ -110,6 +176,8 @@
             <span class="tag" style="--r:3deg">Java</span>
             <span class="tag" style="--r:-2deg">SQL</span>
             <span class="tag" style="--r:1deg">HTML / CSS</span>
+            <span class="tag" style="--r:-2deg">Go</span>
+            <span class="tag" style="--r:2deg">C / C++</span>
           </div>
         </div>
 
@@ -125,6 +193,8 @@
             <span class="tag" style="--r:-3deg">Git &amp; GitHub</span>
             <span class="tag" style="--r:3deg">Docker</span>
             <span class="tag" style="--r:-1deg">Figma</span>
+            <span class="tag" style="--r:2deg">Next.js</span>
+            <span class="tag" style="--r:-2deg">FastAPI</span>
           </div>
         </div>
 
@@ -140,6 +210,8 @@
             <span class="tag" style="--r:2deg">scikit-learn</span>
             <span class="tag" style="--r:-1deg">PostgreSQL</span>
             <span class="tag" style="--r:3deg">Excel Wizardry</span>
+            <span class="tag" style="--r:-2deg">PyTorch</span>
+            <span class="tag" style="--r:1deg">LightGBM</span>
           </div>
         </div>
 
@@ -155,6 +227,8 @@
             <span class="tag" style="--r:-1deg">Linux</span>
             <span class="tag" style="--r:2deg">REST APIs</span>
             <span class="tag" style="--r:-3deg">CI/CD</span>
+            <span class="tag" style="--r:2deg">Supabase</span>
+            <span class="tag" style="--r:-1deg">Render</span>
           </div>
         </div>
       </div>
@@ -173,6 +247,15 @@
     <div class="footer-socials">
       <a href="https://github.com/AbhiMokkapati" target="_blank" rel="noopener" aria-label="GitHub">
         <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/abhiram-mokkapati" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:abhimokkapati@gmail.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="assets/Abhiram_Mokkapati_Resume.pdf" target="_blank" rel="noopener" aria-label="Resume (PDF)">
+        <i class="fa-solid fa-file-lines"></i>
       </a>
     </div>
   </footer>

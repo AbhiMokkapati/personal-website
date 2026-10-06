@@ -184,6 +184,50 @@
   margin: 0 auto 3rem;
 }
 
+/* ============ EXPERIENCE ============ */
+.experience {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 5vw, 3.5rem) clamp(4rem, 9vw, 7rem);
+}
+.experience h2 {
+  font-size: clamp(1.9rem, 3.6vw, 2.6rem);
+  margin: 0.4rem 0 2rem;
+}
+.exp-list { display: grid; gap: 1.5rem; }
+.exp-card {
+  background: var(--paper);
+  border: 2.5px solid var(--ink);
+  border-radius: var(--radius);
+  padding: 1.6rem;
+  box-shadow: var(--shadow-pop-sm);
+}
+.exp-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.9rem;
+}
+.exp-head h3 { font-size: 1.25rem; }
+.exp-org { font-family: var(--font-mono); font-size: 0.82rem; color: var(--ink-soft); margin: 0.3rem 0 0; }
+.exp-date {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  border: 1.5px solid var(--ink);
+  border-radius: 100px;
+  padding: 0.3em 0.9em;
+  background: var(--marigold);
+  white-space: nowrap;
+}
+.exp-card ul { margin: 0; padding-left: 1.1rem; color: var(--ink-soft); }
+.exp-card li { margin-bottom: 0.5rem; }
+.exp-note { margin: 0; color: var(--ink-soft); }
+.exp-note strong { color: var(--ink); }
+.exp-actions { margin-top: 2rem; text-align: center; }
+
 /* ============ SKILLS ============ */
 .skills {
   padding: clamp(3rem, 8vw, 5rem) clamp(1.25rem, 5vw, 3.5rem);
