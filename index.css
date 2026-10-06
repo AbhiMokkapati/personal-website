@@ -233,6 +233,33 @@
 .exp-card li { margin-bottom: 0.5rem; }
 .exp-note { margin: 0; color: var(--ink-soft); }
 .exp-note strong { color: var(--ink); }
+.exp-role-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+  flex-wrap: wrap;
+  margin: 1.4rem 0 0.7rem;
+  padding-top: 1rem;
+  border-top: 1.5px dashed rgba(32, 27, 21, 0.3);
+}
+.exp-role-head h4 { font-size: 1.05rem; }
+.exp-role-head span { font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-soft); }
+.exp-org-list { display: grid; gap: 1.5rem; }
+.exp-org-block h4 { font-size: 1.02rem; margin-bottom: 0.45rem; }
+.exp-org-block h4 small { font-family: var(--font-mono); font-size: 0.74rem; font-weight: 400; color: var(--ink-soft); margin-left: 0.4rem; }
+.exp-role {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.15rem 1rem;
+  flex-wrap: wrap;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid rgba(32, 27, 21, 0.12);
+  color: var(--ink-soft);
+}
+.exp-role strong { font-weight: 500; color: var(--ink); }
+.exp-role span { font-family: var(--font-mono); font-size: 0.76rem; white-space: nowrap; }
+.exp-org-note { margin: 0.5rem 0 0; color: var(--ink-soft); font-size: 0.93rem; }
 .exp-actions { margin-top: 2rem; text-align: center; }
 
 /* ============ SKILLS ============ */
